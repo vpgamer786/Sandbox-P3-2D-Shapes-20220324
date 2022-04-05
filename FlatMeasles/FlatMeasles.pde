@@ -60,30 +60,30 @@ yNose3 = faceY;
 //
 //Face: Circle = Inscribing a Circle in a Square
 //Center a circle on display orientation
-rect(rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight);
+//rect(rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight);
 ellipse(faceX, faceY, faceDiameter, faceDiameter);
 //
 //Left Eye
-rect(leftEyeX-eyeDiameter*1/2, leftEyeY-eyeDiameter*1/2, eyeDiameter, eyeDiameter);
+//rect(leftEyeX-eyeDiameter*1/2, leftEyeY-eyeDiameter*1/2, eyeDiameter, eyeDiameter);
 ellipse(leftEyeX, leftEyeY, eyeDiameter, eyeDiameter);
 //
 //Right Eye
-rect(rightEyeX-eyeDiameter*1/2, rightEyeY-eyeDiameter*1/2, eyeDiameter, eyeDiameter);
+//rect(rightEyeX-eyeDiameter*1/2, rightEyeY-eyeDiameter*1/2, eyeDiameter, eyeDiameter);
 ellipse(rightEyeX, rightEyeY, eyeDiameter, eyeDiameter);
 //
 //Nose
-rect(xNose2, yNose1, xNose3-xNose2, yNose3-yNose1);
+//rect(xNose2, yNose1, xNose3-xNose2, yNose3-yNose1);
 triangle(xNose1, yNose1, xNose2, yNose2, xNose3, yNose3);
 //
 //Mouth
 int mouthWidth = int ( mouthX2 - mouthX1 ); //length=end-beginning
 int mouthHeight = mouthOpen;
-rect(mouthX1-mouthHeight*1/2, mouthY1-mouthHeight*1/2, mouthWidth+mouthOpen, mouthHeight);
+//rect(mouthX1-mouthHeight*1/2, mouthY1-mouthHeight*1/2, mouthWidth+mouthOpen, mouthHeight);
 strokeWeight(mouthOpen); //testing: 100=400/4, mouthOpen=height*1/4
 line(mouthX1, mouthY1, mouthX2, mouthY2);
 strokeWeight(reset); //reset to 1 pixel
 //comparison rect() line only, no caps, no strokeWeight
-rect(mouthX1, mouthY1, mouthWidth, mouthHeight);
+//rect(mouthX1, mouthY1, mouthWidth, mouthHeight);
 //
 //
 //Measle

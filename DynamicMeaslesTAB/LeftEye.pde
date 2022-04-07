@@ -1,3 +1,5 @@
+//Global Variable
+
 void leftEyeDraw() {
   //Left Eye
   //rect(leftEyeX-eyeDiameter*1/2, leftEyeY-eyeDiameter*1/2, eyeDiameter, eyeDiameter);

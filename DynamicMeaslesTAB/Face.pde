@@ -1,3 +1,6 @@
+//Global Variables
+float rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight;
+//
 void face() {
   //Face: Circle = Inscribing a Circle in a Square
   //Center a circle on display orientation

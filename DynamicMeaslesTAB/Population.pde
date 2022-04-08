@@ -12,12 +12,12 @@ void population() {
   leftEyeX = appWidth*1.4/4;
   rightEyeX = appWidth*2.6/4;
   leftEyeY = appHeight*1/4;
-  rightEyeY = leftEyeY; //Best Practice: change one line of code
-  eyeDiameter = smallerDisplayDimesion*1/4;
-  mouthX1 = leftEyeX;
-  mouthY1 = appHeight*3/4;
-  mouthX2 = rightEyeX;
-  mouthY2 = mouthY1;
+  //rightEyeY = appHeight*1/4; //Best Practice: change one line of code
+  //eyeDiameter = smallerDisplayDimesion*1/4;
+  //mouthX1 = leftEyeX;
+  //mouthY1 = appHeight*3/4;
+  //mouthX2 = rightEyeX;
+  //mouthY2 = mouthY1;
   mouthOpen = smallerDisplayDimesion*1/4;
   xNose1 = faceX;
   yNose1 = leftEyeY;
@@ -25,5 +25,17 @@ void population() {
   yNose2 = faceY ;
   xNose3 = faceX + leftEyeY*1/2;
   yNose3 = faceY;
+  faceSquareMeasleX = appWidth*1/2-appHeight*1/2;
+  faceSquareMeasleY = appHeight*0;
+  faceSquareMeasleSide = appHeight;
+  pic = loadImage ("mouth.png");
+  imageMouthX = appWidth*11.5/30;
+  imageMouthY = appHeight*6/10;
+  pic1 = loadImage ("Eye.png");
+  imageLeftEyeX = appWidth*1.1/4;
+  imageLeftEyeY = appHeight*1/15;
+  pic2 = loadImage ("Eye.png");
+  imageRightEyeX2 = appWidth*2/4;
+  imageRightEyeY2 = appHeight*1/15;
   //
 }//End population

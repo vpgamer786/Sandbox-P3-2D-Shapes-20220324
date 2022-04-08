@@ -4,11 +4,12 @@ int reset, smallerDisplayDimesion, mouthOpen;
 float faceX, faceY, faceDiameter;
 float leftEyeX, leftEyeY, rightEyeX, rightEyeY, eyeDiameter;
 float xNose1, yNose1, xNose2, yNose2, xNose3, yNose3;
+float faceSquareMeasleX, faceSquareMeasleY, faceSquareMeasleSide;
 //
 void setup() 
 {
   //Display Geometry
-  size(600, 400); //fullScreen(); displayWidth, displayHeight
+  size(1600,900); //fullScreen(); displayWidth, displayHeight
   //Landscape, not square or portrait
   display();
   population();

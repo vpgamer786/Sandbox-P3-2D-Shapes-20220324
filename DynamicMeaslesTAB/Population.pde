@@ -30,12 +30,17 @@ void population() {
   faceSquareMeasleSide = appHeight;
   pic = loadImage ("mouth.png");
   imageMouthX = appWidth*11.5/30;
-  imageMouthY = appHeight*6/10;
+  imageMouthY = appHeight*5.5/10;
   pic1 = loadImage ("Eye.png");
   imageLeftEyeX = appWidth*1.1/4;
   imageLeftEyeY = appHeight*1/15;
   pic2 = loadImage ("Eye.png");
   imageRightEyeX2 = appWidth*2/4;
   imageRightEyeY2 = appHeight*1/15;
+  //
+  quitButtonX = width*1/30;
+  quitButtonY = height*1/5;
+  quitButtonWidth = height*1/4;
+  quitButtonHeight = height*1/10;
   //
 }//End population

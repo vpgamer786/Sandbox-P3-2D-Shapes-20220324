@@ -5,6 +5,7 @@ float faceX, faceY, faceDiameter;
 float leftEyeX, leftEyeY, rightEyeX, rightEyeY, eyeDiameter;
 float xNose1, yNose1, xNose2, yNose2, xNose3, yNose3;
 float faceSquareMeasleX, faceSquareMeasleY, faceSquareMeasleSide;
+Boolean measlesOn=false, eyesOn=false;
 //
 void setup() 
 {
@@ -24,12 +25,17 @@ void draw()
   rightEyeDraw();
   noseDraw();
   mouth();
+  quitButtonDraw();
 }//End draw
 //
 void keyPressed() {
+  if (key == 'Q' || key == 'q') exit();
 }//End keyPressed
 //
 void mousePressed() {
+  eyesOn = false;
+  measlesOn = false;
+  if ( mouseX>quitButtonX && mouseX<quitButtonX+quitButtonWidth && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight) exit();
 }//End mousePressed
 //
 //End Main Program

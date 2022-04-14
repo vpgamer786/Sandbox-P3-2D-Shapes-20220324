@@ -6,15 +6,17 @@ float leftEyeX, leftEyeY, rightEyeX, rightEyeY, eyeDiameter;
 float xNose1, yNose1, xNose2, yNose2, xNose3, yNose3;
 float faceSquareMeasleX, faceSquareMeasleY, faceSquareMeasleSide;
 Boolean measlesOn=false, eyesOn=false;
+int titleX, titleY, titleWidth, titleHeight;
 //
 void setup() 
 {
   //Display Geometry
-  size(1600,900); //fullScreen(); displayWidth, displayHeight
+  fullScreen(); //fullScreen(); displayWidth, displayHeight
   //Landscape, not square or portrait
   display();
   population();
   face();
+  title();
   //
 }//End setup
 //
@@ -26,6 +28,7 @@ void draw()
   noseDraw();
   mouth();
   quitButtonDraw();
+  buttonText();
 }//End draw
 //
 void keyPressed() {

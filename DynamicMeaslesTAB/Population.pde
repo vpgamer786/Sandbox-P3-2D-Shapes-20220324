@@ -1,5 +1,9 @@
 void population() {
   //
+  titleX = width*1/40;
+  titleY = height*1/20;
+  titleWidth = width*3/5;
+  titleHeight = height*1/10;
   smallerDisplayDimesion = appHeight; //ALWAYS in Landscape
   reset = smallerDisplayDimesion / smallerDisplayDimesion;
   rectFaceX = (appWidth*1/2) - (smallerDisplayDimesion*1/2); //return "1"
@@ -42,5 +46,6 @@ void population() {
   quitButtonY = height*1/5;
   quitButtonWidth = height*1/4;
   quitButtonHeight = height*1/10;
+  
   //
 }//End population
